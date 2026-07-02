@@ -1,0 +1,13 @@
+# credentials
+.git-credentials
+*.token
+
+# cache and logs that are not needed in the repo
+polybar/cache/
+alacritty/cache/
+*.log
+
+# useless files
+.DS_Store
+*.swp
+*~
