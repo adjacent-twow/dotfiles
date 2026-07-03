@@ -14,6 +14,8 @@ ln -sf ~/dotfiles/alacritty ~/.config/alacritty
 ln -sf ~/dotfiles/.xinitrc ~/.xinitrc
 ln -sf ~/dotfiles/zsh/.zshrc ~/.zshrc
 ln -sf ~/dotfiles/zsh/.zprofile ~/.zprofile
+ln -sf ~/dotfiles/picom/ ~/.config/picom
+
 
 echo "Changing shell..."
 chsh -s $(which zsh)
