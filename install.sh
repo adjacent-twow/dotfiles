@@ -34,6 +34,7 @@ desktop_packages=(
     rofi
     firefox
     picom
+    calcurse
     redshift
 )
 
