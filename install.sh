@@ -27,6 +27,9 @@ desktop_packages=(
     zsh-syntax-highlighting
     zsh-autosuggestions
     starship
+    fzf
+    bat
+    micro
     dunst
     rofi
     firefox
@@ -34,8 +37,7 @@ desktop_packages=(
     redshift
 )
 
-sudo pacman -S --needed "${x_packages[@]}"
-sudo pacman -S --needed "${desktop_packages[@]}"
+sudo pacman -S --needed "${x_packages[@]}" "${desktop_packages[@]}"
 
 echo "Linking configs from the repo..."
 
