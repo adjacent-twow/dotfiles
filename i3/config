@@ -1,6 +1,6 @@
 set $mod Mod4
 
-font pango:JetBrainsMono Nerd Font 12
+font pango:FiraCode Nerd Font 12
 
 # Start XDG autostart .desktop files using dex. See also
 exec --no-startup-id dex --autostart --environment i3
@@ -19,6 +19,9 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 exec_always --no-startup-id setxkbmap -model pc104 -layout us,ru -option grp:alt_shift_toggle 
 exec_always --no-startup-id xset r rate 200 50
 
+# calendar
+bindsym $mod+c exec --no-startup-id alacritty -e calcurse
+
 # suspend
 bindsym $mod+shift+p exec systemctl suspend
 
@@ -30,6 +33,7 @@ bindsym $mod+t exec Telegram
 
 # firefox 
 bindsym $mod+b exec firefox
+bindsym $mod+shift+b exec firefox --private-window
 
 # guitarix
 bindsym $mod+shift+g exec guitarix
@@ -46,10 +50,10 @@ floating_modifier $mod
 tiling_drag modifier titlebar
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec alacritty
 
 # kill focused window
-bindsym $mod+q kill
+bindsym $mod+shift+q kill
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec --no-startup-id "rofi -show drun"
@@ -64,9 +68,10 @@ default_border none
 gaps inner 10
 
 # assigns
-assign [instance="spotify"] $ws2
+assign [instance="spotify"] $ws4
 assign [instance="discord"] $ws2
 assign [instance="Telegram"] $ws2
+
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
