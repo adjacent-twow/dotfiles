@@ -1,37 +1,54 @@
-## My personal Arch Linux dotfiles repository. 
+# dotfiles
 
-## This repo is build around a minimalistic X/i3 setup for Arch Linux and Arch-based systems. It contains:
-- i3 (window manager)
-- Polybar (status bar)
-- Alacritty (terminal emulator)
-- Zsh (shell)
-- Starship (prompt)
-- Rofi (application launcher)
-- Dunst (notifications)
-- Redshift (night light)
+My personal Arch Linux dotfiles.
+A minimalistic X/i3 setup for Arch and Arch-based systems.
 
+## Contents
+
+* i3 (window manager)
+* Polybar (status bar)
+* Alacritty (terminal emulator)
+* Zsh (shell)
+* Starship (prompt)
+* Rofi (application launcher)
+* Dunst (notifications)
+* Redshift (night light)
 
 ## Installation
-1. clone the repo (git clone https://github.com/adjacent-twow/dotfiles.git)
-2. cd dotfiles/
-3. make the install.sh executable (chmod +x install.sh)
-4. ./install.sh
 
-## The script will:
-- Install required packages via pacman
-- Symlink configuration files into your home directory
-- Set Zsh as the default login shell
+```bash
+git clone https://github.com/adjacent-twow/dotfiles.git
+cd dotfiles
+chmod +x install.sh
+./install.sh
+```
 
-## Files overview and important notes
+The script will:
 
-### Session startup (no display manager)
+* install required packages via pacman
+* symlink configuration files into your home directory
+* set Zsh as the default login shell
 
-This setup does not use a display manager (e.g. `ly`, `sddm`, `lightdm`).
+## Zsh
 
-Instead, `.zprofile` contains a small script that automatically starts the X session after login, so you don’t need to run `startx` manually after entering your username and password.
+Shell config lives in `zsh/.zshrc`. It needs these packages:
+`zsh-autosuggestions`, `zsh-syntax-highlighting`, `fzf` (0.48+), `starship`, `bat`, `micro`.
+
+Highlights:
+
+* shared history between sessions (50k entries)
+* prefix history search on up/down arrows
+* `Ctrl+R` / `Ctrl+T` / `Alt+C` via fzf with previews
+* `Ctrl+Space` accepts the autosuggestion
+* `ll`, `la`, `..` and quick-edit aliases for configs (`zshrc`, `i3conf`, `polyconf`, ...)
+
+## Session startup (no display manager)
+
+This setup does not use a display manager (`ly`, `sddm`, `lightdm`, etc.).
+Instead, `zsh/.zprofile` contains a small script that starts the X session automatically after login.
 
 This means:
 
-* You log in on a TTY
+* you log in on a TTY
 * X/i3 starts automatically via `.zprofile`
-* No manual `startx` step is required
+* no manual `startx` is needed
