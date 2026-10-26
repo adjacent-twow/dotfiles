@@ -1,5 +1,5 @@
-redshift -O 5000 &
-xwallpaper --zoom Pictures/rey.jpg &
+redshift &
+xwallpaper --zoom ~/Pictures/rey.jpg &
 picom &
 dunst &
 xset s off -dpms
