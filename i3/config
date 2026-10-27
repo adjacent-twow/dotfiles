@@ -27,6 +27,7 @@ bindsym $mod+shift+p exec systemctl suspend
 
 # screenshot
 bindsym $mod+shift+s exec maim -s | xclip -selection clipboard -t image/png
+bindsym Print exec --no-startup-id maim -s ~/Pictures/screenshots_2/shot_$(date +%F_%H-%M-%S).png
 
 # telega
 bindsym $mod+t exec Telegram
