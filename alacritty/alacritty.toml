@@ -7,7 +7,7 @@ dynamic_padding = true
 transparent_background_colors = true
 
 [font]
-normal = { family = "FiraCode Nerd Font Mono" }
+normal = { family = "MesloLGS Nerd Font Mono", style = "Regular" }
 size = 12
 
 [cursor]
