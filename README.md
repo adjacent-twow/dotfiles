@@ -9,7 +9,6 @@ A minimalistic X/i3 setup for Arch and Arch-based systems.
 * Polybar (status bar)
 * Alacritty (terminal emulator)
 * Zsh (shell)
-* Starship (prompt)
 * Rofi (application launcher)
 * Dunst (notifications)
 * Redshift (night light)
