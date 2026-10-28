@@ -65,8 +65,15 @@ bindsym $mod+d exec --no-startup-id "rofi -show drun"
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
 
 # borders
-default_border none
+default_border pixel 2
+default_floating_border pixel 2
 gaps inner 10
+
+# colors                border   background text   	indicator child_border
+client.focused          #9a9a9a  #9a9a9a   #000000  #9a9a9a   #9a9a9a
+client.focused_inactive #333333  #333333   #888888  #333333   #333333
+client.unfocused        #333333  #222222   #888888  #333333   #333333
+client.urgent           #ff5555  #ff5555   #ffffff  #ff5555   #ff5555
 
 # assigns
 assign [instance="spotify"] $ws4
