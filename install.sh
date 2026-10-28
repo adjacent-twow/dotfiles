@@ -26,7 +26,6 @@ desktop_packages=(
     zsh
     zsh-syntax-highlighting
     zsh-autosuggestions
-    starship
     fzf
     bat
     micro
