@@ -21,6 +21,13 @@ chmod +x install.sh
 ./install.sh
 ```
 
+## Manual steps
+
+The Powerlevel10k theme is only in the AUR, so the script does not install it:
+
+* install an AUR helper (e.g. `yay`) and run `yay -S zsh-theme-powerlevel10k`
+* run `p10k configure` to generate `~/.p10k.zsh` (it is not tracked in this repo, you're free to install any prompt)
+
 The script will:
 
 * install required packages via pacman
