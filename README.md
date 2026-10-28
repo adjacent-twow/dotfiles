@@ -1,5 +1,3 @@
-# dotfiles
-
 My personal Arch Linux dotfiles.
 A minimalistic X/i3 setup for Arch and Arch-based systems.
 
@@ -9,6 +7,7 @@ A minimalistic X/i3 setup for Arch and Arch-based systems.
 * Polybar (status bar)
 * Alacritty (terminal emulator)
 * Zsh (shell)
+* Fzf (fuzzy finder)
 * Rofi (application launcher)
 * Dunst (notifications)
 * Redshift (night light)
