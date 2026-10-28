@@ -75,6 +75,8 @@ client.focused_inactive #333333  #333333   #888888  #333333   #333333
 client.unfocused        #333333  #222222   #888888  #333333   #333333
 client.urgent           #ff5555  #ff5555   #ffffff  #ff5555   #ff5555
 
+focus_on_window_activation urgent
+
 # assigns
 assign [instance="spotify"] $ws4
 assign [instance="discord"] $ws2
